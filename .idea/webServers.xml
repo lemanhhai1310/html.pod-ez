@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="89a5c3bd-4e5c-44f2-a47f-555cf12fac8c" name="pod-ez" url="http://103.74.118.14">
+        <fileTransfer host="103.74.118.14" port="21" rootFolder="/domains/cathtmlcss.net/public_html/themes/2019/06/pod-ez/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
