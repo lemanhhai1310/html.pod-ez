@@ -1,0 +1,60 @@
+.floating-shapes span {
+    display: block;
+    position: absolute;
+    z-index: 999999;
+}
+.floating-shapes span img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: scale(0.8);
+}
+.floating-shapes span:nth-child(1) {
+    left: 35%;
+    top: 4.5%;
+}
+.floating-shapes span:nth-child(2) {
+    left: 85%;
+    top: 12%;
+}
+.floating-shapes span:nth-child(3) {
+    left: 8.8%;
+    bottom: 50%;
+}
+.floating-shapes span:nth-child(4) {
+    right: 5%;
+    bottom: 15%;
+}
+.floating-shapes span:nth-child(5) {
+    left: 20%;
+    bottom: 6.6%;
+}
+.floating-shapes span:nth-child(6) {
+    right: 23%;
+    bottom: 3%;
+}
+.floating-shapes span:nth-child(7) {
+    left: 49%;
+    top: 50%;
+}
+.floating-shapes span:nth-child(8) {
+    right: 11.8%;
+    top: 33%;
+}
+.floating-shapes span:nth-child(9) {
+    right: 6%;
+    top: 10%;
+}
+.floating-shapes span:nth-child(10) {
+    right: 4.5%;
+    bottom: 55%;
+}
+
+@media screen and (max-width: 767.98px) {
+    .floating-shapes span {
+        -webkit-transform: none !important;
+        -ms-transform: none !important;
+        transform: none !important;
+        display: none;
+    }
+}
