@@ -1,6 +1,26 @@
 <?php $title = "Trang chủ" ?>
 <?php include "header.php"; ?>
-<div id="pod-block-customer" class="uk-section uk-position-relative uk-overflow-hidden">
+<div class="uk-section">
+    <div class="uk-container">
+        <div class="uk-flex-middle" uk-grid>
+            <div class="uk-width-expand@m">
+                <div class="pod-block-header uk-margin-medium">
+                    <span class="uk-text-uppercase">who are we</span>
+                    <h2>About PodEz</h2>
+                    <p class="pod-desc2">At Podez, we make it easy to sell your own idea. Over 20 exclusive products will make your store stand out from the crowd.</p>
+                    <p class="pod-desc">We believe that good design is powerful, hard work is essential, and exploring the unknown is important. We focus on how to help you sell better, and you can just focus on selling. All the features you want, none of the hassle.</p>
+                    <div>
+                        <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">More about us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-auto@m">
+                <img src="imgs/img5.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pod-block-customer" class="uk-section uk-position-relative">
     <div class="floating-shapes">
         <span data-parallax='{"x": 50, "y": -20, "rotateZ":500}'>
             <img src="imgs/shape/shape1.png" alt="">
@@ -22,7 +42,7 @@
         </span>
     </div>
     <div class="uk-container">
-        <div class="uk-child-width-1-2@m" uk-grid>
+        <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
             <div>
                 <div class="pod-block-header uk-margin-medium">
                     <span class="uk-text-uppercase">our community</span>
