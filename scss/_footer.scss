@@ -1,3 +1,39 @@
 #pod-footer{
   background-color: #f2f7f8;
+  @media(min-width: 960px){
+    padding-top: 100px;
+  }
+  @media(max-width: 960px){
+    text-align: center;
+  }
+}
+.pod-footer-social{
+  a{
+    &:nth-child(n+2){
+      margin-left: 5px;
+    }
+    color: #022456;
+    border: 1px solid #022456;
+    border-radius: 50%;
+    svg{
+      width: 16px;
+    }
+  }
+}
+.pod-footer-title{
+  font-family:'Poppins-Medium';
+  font-size: 16px;
+  color: #021d3d;
+}
+.pod-footer-list{
+  li{
+    color: #7e8190;
+    font-size: 13px;
+    &:nth-child(n+2){
+      margin-top: 7px;
+    }
+    a{
+      color: #7e8190;
+    }
+  }
 }

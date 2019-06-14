@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="pod-ez">
+  <component name="PublishConfigData" serverName="pod-ez" uploadOnCheckin="89a5c3bd-4e5c-44f2-a47f-555cf12fac8c">
     <serverData>
       <paths name="pod-ez">
         <serverdata>
@@ -10,5 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myUploadOnCheckinName" value="pod-ez" />
   </component>
 </project>

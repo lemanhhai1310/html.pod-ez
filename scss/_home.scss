@@ -1,0 +1,36 @@
+.pod-install{
+  text-transform: inherit;
+  border-radius: 4px;
+  background-color: #022456;
+  font-family:'Poppins-SemiBold';
+  font-size: 13px;
+}
+.pod-desc{
+  line-height: 1.8;
+  #pod-block-getapp &{
+    color: #FFFFFF !important;
+  }
+}
+.pod-box-img{
+  border: 13px solid #FFFFFF;
+  border-radius: 16px;
+  @media(min-width: 960px){
+    margin-bottom: -120px !important;
+  }
+}
+.pod-block-header{
+  span{
+    color: #715be4;
+    font-family:'Poppins-Medium';
+  }
+  h2{
+    margin: 0 !important;
+    margin-top: 2px !important;
+    font-size: 35px;
+    font-family:'Poppins-SemiBold';
+    color: #021d3d;
+    #pod-block-getapp &{
+      color: #FFFFFF !important;
+    }
+  }
+}
