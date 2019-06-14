@@ -50,15 +50,15 @@
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
             <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#"><img src="imgs/logo.png" alt=""></a>
+                <a class="uk-navbar-item uk-logo" href="."><img src="imgs/logo.png" alt=""></a>
             </div>
 
             <div class="uk-navbar-center">
-                <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav uk-visible@m">
                     <li><a href="#">About</a></li>
                     <li><a href="#">features</a></li>
                     <li><a href="#">How it work</a></li>
-                    <li><a href="#">faq</a></li>
+                    <li><a href="faqs.php">faq</a></li>
                     <li><a href="#">sign in</a></li>
                 </ul>
             </div>

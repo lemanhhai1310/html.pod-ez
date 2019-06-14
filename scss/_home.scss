@@ -7,10 +7,10 @@
   &:after{
     content: '';
     position: absolute;
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
     background-color: #f2f7f8;
-    top: -70%;
+    top: -50%;
     right: -50%;
     border-radius: 50%;
     z-index: 0;

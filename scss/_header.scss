@@ -1,5 +1,9 @@
 #pod-header{
+  &.uk-active{
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.06), 0 4px 5px 0 rgba(0,0,0,.06), 0 1px 10px 0 rgba(0,0,0,.08);
+  }
   .uk-logo{
+    padding-left: 0;
     img{
       height: 60px;
     }
@@ -10,7 +14,7 @@
         >a{
           color: #022456;
           font-family:'Poppins-SemiBold';
-          font-size: 13px !important;
+          font-size: 12px !important;
         }
       }
     }

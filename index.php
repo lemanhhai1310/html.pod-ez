@@ -113,8 +113,10 @@
     <div class="uk-container">
         <div uk-grid>
             <div class="uk-width-3-5@m uk-position-relative">
-                <div class="pod-box-img uk-box-shadow-large uk-position-center-right uk-visible@m">
-                    <img src="imgs/order.jpg" alt="">
+                <div class="uk-position-center-right">
+                    <div class="pod-box-img uk-box-shadow-large uk-visible@m" uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+                        <img src="imgs/order.jpg" alt="">
+                    </div>
                 </div>
             </div>
             <div class="uk-width-2-5@m">

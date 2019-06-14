@@ -3,7 +3,7 @@
         <div class="uk-child-width-1-5@m" uk-grid>
             <div>
                 <figure>
-                    <a href="#"><img src="imgs/logo.png" alt=""></a>
+                    <a href="."><img src="imgs/logo.png" alt=""></a>
                 </figure>
             </div>
             <div>
