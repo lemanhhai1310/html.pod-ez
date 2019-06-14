@@ -43,4 +43,4 @@
      page_id="2428809380682169"
      theme_color="#24892d">
 </div>
-<section id="app" class="uk-height-viewport uk-offcanvas-content">
+<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">

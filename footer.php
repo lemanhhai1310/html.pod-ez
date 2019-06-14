@@ -1,4 +1,4 @@
-<footer id="pod-footer" class="uk-section">
+<footer id="pod-footer" class="uk-section pod-common">
     <div class="uk-container">
         <div class="uk-child-width-1-5@m" uk-grid>
             <div>

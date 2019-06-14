@@ -1,3 +1,24 @@
+.pod-icon-step{
+  background-color: #022456;
+  color: #FFFFFF;
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+.pod-desc3{
+  color: #7e8190;
+}
+.pod-step-name{
+  color: #022456;
+  font-family:'Poppins-Medium';
+  font-size: 14px;
+}
+.pod-common{
+  background-color: #f2f7f8;
+}
 .pod-desc2{
   color: #021d3d;
   font-family:'Poppins-Medium';
@@ -84,7 +105,7 @@
   font-family:'Poppins-LightItalic';
 }
 #pod-block-customer{
-  background-color: #f2f7f8;
+
 }
 .pod-btn1{
   background-color: #2dd47c;
@@ -131,8 +152,16 @@
 .pod-box-img{
   border: 13px solid #FFFFFF;
   border-radius: 16px;
+  #pod-how &{
+    width: 1000px !important;
+    img{
+
+    }
+  }
   @media(min-width: 960px){
-    margin-bottom: -120px !important;
+    #pod-block-getapp &{
+      margin-bottom: -120px !important;
+    }
   }
 }
 .pod-block-header{

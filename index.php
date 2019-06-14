@@ -2,16 +2,78 @@
 <?php include "header.php"; ?>
 <div class="uk-section">
     <div class="uk-container">
+
+    </div>
+</div>
+<div id="pod-how" class="pod-common uk-section-small">
+    <div class="uk-container">
+        <div uk-grid>
+            <div class="uk-width-3-5@m uk-position-relative">
+                <div class="pod-box-img uk-box-shadow-large uk-position-center-right uk-visible@m">
+                    <img src="imgs/order.jpg" alt="">
+                </div>
+            </div>
+            <div class="uk-width-2-5@m">
+                <div class="pod-block-header uk-margin-medium">
+                    <span class="uk-text-uppercase">Step process</span>
+                    <h2>How it work</h2>
+                </div>
+                <div>
+                    <ul class="uk-list">
+                        <?php
+                        $data = array(
+                            array(
+                                'icon' => 'fa fa-cog',
+                                'desc' => 'Set up your Shopify or Woocommerce store',
+                            ),
+                            array(
+                                'icon' => 'fa fa-download',
+                                'desc' => 'Install PodEz app - create new account to your store',
+                            ),
+                            array(
+                                'icon' => 'fa fa-list-ul',
+                                'desc' => 'List and create new products on app',
+                            ),
+                            array(
+                                'icon' => 'fa fa-cube',
+                                'desc' => 'Sync your orders to PodEz and we will fulfill them',
+                            ),
+                            array(
+                                'icon' => 'fa fa-star-o',
+                                'desc' => 'Finally, products get shipped to the customer',
+                            ),
+                        );
+                        foreach ($data as $k1 => $v1){ ?>
+                            <li class="uk-margin">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <i class="uk-border-circle pod-icon-step <?= $v1['icon'] ?>" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="pod-step-name">Step <?= $k1 + 1 ?></div>
+                                        <div class="pod-desc3"><?= $v1['desc'] ?></div>
+                                    </div>
+                                </div>
+                            </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="uk-section-large">
+    <div class="uk-container">
         <div class="uk-flex-middle" uk-grid>
             <div class="uk-width-expand@m">
                 <div class="pod-block-header uk-margin-medium">
                     <span class="uk-text-uppercase">who are we</span>
                     <h2>About PodEz</h2>
-                    <p class="pod-desc2">At Podez, we make it easy to sell your own idea. Over 20 exclusive products will make your store stand out from the crowd.</p>
-                    <p class="pod-desc">We believe that good design is powerful, hard work is essential, and exploring the unknown is important. We focus on how to help you sell better, and you can just focus on selling. All the features you want, none of the hassle.</p>
-                    <div>
-                        <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">More about us</a>
-                    </div>
+                </div>
+                <p class="pod-desc2">At Podez, we make it easy to sell your own idea. Over 20 exclusive products will make your store stand out from the crowd.</p>
+                <p class="pod-desc">We believe that good design is powerful, hard work is essential, and exploring the unknown is important. We focus on how to help you sell better, and you can just focus on selling. All the features you want, none of the hassle.</p>
+                <div>
+                    <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">More about us</a>
                 </div>
             </div>
             <div class="uk-width-auto@m">
@@ -20,7 +82,7 @@
         </div>
     </div>
 </div>
-<div id="pod-block-customer" class="uk-section uk-position-relative">
+<div id="pod-block-customer" class="uk-section pod-common uk-position-relative">
     <div class="floating-shapes">
         <span data-parallax='{"x": 50, "y": -20, "rotateZ":500}'>
             <img src="imgs/shape/shape1.png" alt="">
