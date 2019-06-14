@@ -1,5 +1,16 @@
 #pod-block-features{
   background-color: #fbfbfb;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    background-color: #f2f7f8;
+    top: -70%;
+    right: -50%;
+    border-radius: 50%;
+    z-index: 0;
+  }
 }
 .pod-card1{
   border-radius: 16px;

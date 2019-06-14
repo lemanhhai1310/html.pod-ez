@@ -1,14 +1,14 @@
 <?php $title = "Trang chủ" ?>
 <?php include "header.php"; ?>
-<div id="pod-block-features" class="uk-section-large">
-    <div class="uk-container">
+<div id="pod-block-features" class="uk-section-large uk-position-relative">
+    <div class="uk-container uk-position-z-index uk-position-relative">
         <div class="pod-block-header uk-text-center uk-margin-medium">
             <span class="uk-text-uppercase">Features</span>
             <h2>Without risks. Without constraints <br>
                 We take care of everything!
             </h2>
         </div>
-        <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match uk-flex-center" uk-grid>
+        <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 100; repeat: false">
             <?php
             $data = array(
                 array(
@@ -39,7 +39,7 @@
             );
             foreach ($data as $k1 => $v1){ ?>
                 <div>
-                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-padding-small pod-card1">
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-padding-small pod-card1">
                         <div class="pod-box-img1">
                             <img src="<?= $v1['img'] ?>" alt="">
                         </div>
@@ -65,7 +65,7 @@
                     <h2>How it work</h2>
                 </div>
                 <div>
-                    <ul class="uk-list">
+                    <ul class="uk-list" uk-scrollspy="cls: uk-animation-slide-right; target: li; delay: 200; repeat: false">
                         <?php
                         $data = array(
                             array(
