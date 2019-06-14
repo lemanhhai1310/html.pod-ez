@@ -1,8 +1,54 @@
 <?php $title = "Trang chủ" ?>
 <?php include "header.php"; ?>
-<div class="uk-section">
+<div id="pod-block-features" class="uk-section-large">
     <div class="uk-container">
-
+        <div class="pod-block-header uk-text-center uk-margin-medium">
+            <span class="uk-text-uppercase">Features</span>
+            <h2>Without risks. Without constraints <br>
+                We take care of everything!
+            </h2>
+        </div>
+        <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match uk-flex-center" uk-grid>
+            <?php
+            $data = array(
+                array(
+                    'img' => 'imgs/icon1.png',
+                    'title' => 'Quality Products',
+                    'desc' => 'Personalized products printed with love',
+                ),
+                array(
+                    'img' => 'imgs/icon2.png',
+                    'title' => 'Auto fulfillment',
+                    'desc' => 'Help you manage your orders easily, and you can just focus on selling',
+                ),
+                array(
+                    'img' => 'imgs/icon3.png',
+                    'title' => 'Safe and secure',
+                    'desc' => 'Keep your information and art designs safe with security system',
+                ),
+                array(
+                    'img' => 'imgs/icon4.png',
+                    'title' => 'Competitive price',
+                    'desc' => 'Fair pricing, no hidden cost, cancel anytime',
+                ),
+                array(
+                    'img' => 'imgs/icon5.png',
+                    'title' => 'Support 24/24',
+                    'desc' => 'We have an excellent team of experienced agents, each of them specializing in particular types of support.',
+                ),
+            );
+            foreach ($data as $k1 => $v1){ ?>
+                <div>
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-padding-small pod-card1">
+                        <div class="pod-box-img1">
+                            <img src="<?= $v1['img'] ?>" alt="">
+                        </div>
+                        <h5><?= $v1['title'] ?></h5>
+                        <p><?= $v1['desc'] ?></p>
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
     </div>
 </div>
 <div id="pod-how" class="pod-common uk-section-small">
