@@ -1,0 +1,18 @@
+#pod-header{
+  .uk-logo{
+    img{
+      height: 60px;
+    }
+  }
+  .uk-navbar-center{
+    .uk-navbar-nav{
+      >li{
+        >a{
+          color: #022456;
+          font-family:'Poppins-SemiBold';
+          font-size: 13px !important;
+        }
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@
     <script src="assets/uikit-3.1.5/js/uikit-icons.min.js"></script>
     <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="js/jquery.parallax-scroll.js"></script>
+    <script src="js/typed.min.js"></script>
 </head>
 <body>
 <!-- Load Facebook SDK for JavaScript -->
@@ -44,3 +45,30 @@
      theme_color="#24892d">
 </div>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
+<header id="pod-header" class="uk-background-default" uk-sticky>
+    <div class="uk-container">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#"><img src="imgs/logo.png" alt=""></a>
+            </div>
+
+            <div class="uk-navbar-center">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">How it work</a></li>
+                    <li><a href="#">faq</a></li>
+                    <li><a href="#">sign in</a></li>
+                </ul>
+            </div>
+
+            <div class="uk-navbar-right">
+
+                <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">Install PodEz</a>
+
+            </div>
+
+        </nav>
+    </div>
+</header>

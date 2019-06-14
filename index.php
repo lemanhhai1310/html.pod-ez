@@ -1,5 +1,63 @@
 <?php $title = "Trang chủ" ?>
 <?php include "header.php"; ?>
+<div id="pod-block-home" class="uk-section uk-position-relative uk-position-z-index uk-background-norepeat uk-background-center-right" data-src="imgs/bg_home.png" uk-img>
+    <div class="floating-shapes">
+        <span data-parallax='{"x": 50, "y": -20, "rotateZ":500}'>
+            <img src="imgs/shape/shape1.png" alt="">
+        </span>
+        <span data-parallax='{"x": 250, "y": 150, "rotateZ":500}'>
+            <img src="imgs/shape/shape2.png" alt="">
+        </span>
+        <span data-parallax='{"x": -180, "y": 80, "rotateY":2000}'>
+            <img src="imgs/shape/shape3.png" alt="">
+        </span>
+        <span data-parallax='{"x": -20, "y": 380}'>
+            <img src="imgs/shape/shape4.png" alt="">
+        </span>
+        <span data-parallax='{"x": 200, "y": 70}'>
+            <img src="imgs/shape/shape5.png" alt="">
+        </span>
+        <span data-parallax='{"x": 250, "y": 380, "rotateZ":1500}'>
+            <img src="imgs/shape/shape6.png" alt="">
+        </span>
+    </div>
+    <div class="uk-container uk-container-small">
+        <div class="pod-block-header uk-text-center uk-margin-medium">
+            <span class="uk-text-uppercase">Welcome To PodEz</span>
+            <h2>
+                <div id="typed-strings">
+                    <span>Easy Print-on-demand <br>and Automatic Fulfillment</span>
+                </div>
+                <span id="typed"></span>
+            </h2>
+        </div>
+        <script>
+            var typed = new Typed("#typed", {
+                stringsElement: '#typed-strings',
+                typeSpeed: 40,
+                backSpeed: 40,
+                backDelay: 500,
+                startDelay: 250,
+                loop: false,
+                shuffle: false,
+                fadeOut: false,
+                contentType: 'html',
+                loopCount: Infinity,
+                onComplete: function(){ },
+                resetCallback: function() { },
+                onTypingPaused: function() { },
+                onTypingResumed: function() { }
+            });
+        </script>
+        <div class="uk-margin-large-bottom uk-text-center">
+            <a href="#" class="uk-button uk-button-secondary uk-button-large pod-install"><span uk-icon="download"></span> Install here</a>
+            <a href="#" class="uk-button uk-button-secondary uk-button-large pod-install c1">Explore now</a>
+        </div>
+        <div class="pod-box-img uk-box-shadow-large uk-position-relative uk-position-z-index" style="margin-bottom: -200px;">
+            <img src="imgs/dashboard.jpg" alt="">
+        </div>
+    </div>
+</div>
 <div id="pod-block-features" class="uk-section-large uk-position-relative">
     <div class="uk-container uk-position-z-index uk-position-relative">
         <div class="pod-block-header uk-text-center uk-margin-medium">
@@ -8,7 +66,7 @@
                 We take care of everything!
             </h2>
         </div>
-        <div class="uk-child-width-1-3@m uk-grid-medium uk-grid-match uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 100; repeat: false">
+        <div class="uk-child-width-1-2 uk-child-width-1-3@m uk-grid-medium uk-grid-match uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 100; repeat: false">
             <?php
             $data = array(
                 array(
