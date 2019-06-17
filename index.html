@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>POD-EZ - Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/uikit-3.1.5/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <!--JS-->
+    <script src="assets/jquery/jquery-3.3.1.js"></script>
+    <script src="assets/uikit-3.1.5/js/uikit.min.js"></script>
+    <script src="assets/uikit-3.1.5/js/uikit-icons.min.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/jquery.parallax-scroll.js"></script>
+    <script src="js/typed.min.js"></script>
+</head>
+<body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v3.2'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     theme_color="#24892d">
+</div>
+<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
+    <div id="my-id" uk-offcanvas="overlay: true; mode: push">
+        <div class="uk-offcanvas-bar uk-overflow-auto uk-flex uk-flex-column uk-padding-remove">
+            <nav class="menu_m">
+                <div class="lq-login-regis" hidden>
+                    <div>
+                        <img src="imgs/user1.png" alt="">
+                        <span class="login-txt uk-text-uppercase"><a class="uk-link-reset" href="#">đăng nhập</a></span>
+                        <div class="regis-forgot">
+                            <a href="#">đăng ký</a> / <a href="#">quên mật khẩu</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="uk-list uk-margin-remove">
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            ABOUT </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            FEATURES </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            HOW IT WORK </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="faqs.php">
+                            FAQ </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            SIGN IN </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright_m">
+                <div class="uk-padding-small">
+                    <small>Copyright © 2019 POD-EZ. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="pod-header" class="uk-background-default" uk-sticky>
+        <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <a href="#my-id" class="uk-navbar-toggle uk-padding-remove-left uk-hidden@m" uk-toggle="">
+                        <div id="m_nav_menu" class="m_nav menu">
+                            <div class="m_nav_ham button_closed" id="m_ham_1"></div>
+                            <div class="m_nav_ham button_closed" id="m_ham_2"></div>
+                            <div class="m_nav_ham button_closed" id="m_ham_3"></div>
+                        </div>
+                    </a>
+                    <a class="uk-navbar-item uk-logo" href=""><img src="imgs/logo.png" alt=""></a>
+                </div>
+
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">features</a></li>
+                        <li><a href="#">How it work</a></li>
+                        <li><a href="faqs.php">faq</a></li>
+                        <li><a href="#">sign in</a></li>
+                    </ul>
+                </div>
+
+                <div class="uk-navbar-right">
+
+                    <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">Install PodEz</a>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div id="pod-block-home"
+         class="uk-section uk-position-relative uk-position-z-index uk-background-norepeat uk-background-center-right"
+         data-src="imgs/bg_home.png" uk-img>
+        <div class="floating-shapes">
+        <span data-parallax='{"x": 50, "y": -20, "rotateZ":500}'>
+            <img src="imgs/shape/shape1.png" alt="">
+        </span>
+            <span data-parallax='{"x": 250, "y": 150, "rotateZ":500}'>
+            <img src="imgs/shape/shape2.png" alt="">
+        </span>
+            <span data-parallax='{"x": -180, "y": 80, "rotateY":2000}'>
+            <img src="imgs/shape/shape3.png" alt="">
+        </span>
+            <span data-parallax='{"x": -20, "y": 380}'>
+            <img src="imgs/shape/shape4.png" alt="">
+        </span>
+            <span data-parallax='{"x": 200, "y": 70}'>
+            <img src="imgs/shape/shape5.png" alt="">
+        </span>
+            <span data-parallax='{"x": 250, "y": 380, "rotateZ":1500}'>
+            <img src="imgs/shape/shape6.png" alt="">
+        </span>
+        </div>
+        <div class="uk-container uk-container-small">
+            <div class="pod-block-header uk-text-center uk-margin-medium">
+                <span class="uk-text-uppercase">Welcome To PodEz</span>
+                <h2>
+                    <div id="typed-strings">
+                        <span>Easy Print-on-demand <br>and Automatic Fulfillment</span>
+                    </div>
+                    <span id="typed"></span>
+                </h2>
+            </div>
+            <script>
+                var typed = new Typed("#typed", {
+                    stringsElement: '#typed-strings',
+                    typeSpeed: 40,
+                    backSpeed: 40,
+                    backDelay: 500,
+                    startDelay: 250,
+                    loop: false,
+                    shuffle: false,
+                    fadeOut: false,
+                    contentType: 'html',
+                    loopCount: Infinity,
+                    onComplete: function () {
+                    },
+                    resetCallback: function () {
+                    },
+                    onTypingPaused: function () {
+                    },
+                    onTypingResumed: function () {
+                    }
+                });
+            </script>
+            <div class="uk-margin-large-bottom uk-text-center">
+                <a href="#" class="uk-button uk-button-secondary uk-button-large pod-install"><span
+                        uk-icon="download"></span> Install here</a>
+                <a href="#" class="uk-button uk-button-secondary uk-button-large pod-install c1">Explore now</a>
+            </div>
+            <div class="pod-box-img uk-box-shadow-large uk-position-relative uk-position-z-index"
+                 style="margin-bottom: -200px;">
+                <img src="imgs/dashboard.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="pod-block-features" class="uk-section-large uk-position-relative">
+        <div class="uk-container uk-position-z-index uk-position-relative">
+            <div class="pod-block-header uk-text-center uk-margin-medium">
+                <span class="uk-text-uppercase">Features</span>
+                <h2>Without risks. Without constraints <br>
+                    We take care of everything!
+                </h2>
+            </div>
+            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-medium uk-grid-match uk-flex-center" uk-grid
+                 uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 100; repeat: false">
+                <div>
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-padding-small pod-card1">
+                        <div class="pod-box-img1">
+                            <img src="imgs/icon1.png" alt="">
+                        </div>
+                        <h5>Quality Products</h5>
+                        <p>Personalized products printed with love</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-padding-small pod-card1">
+                        <div class="pod-box-img1">
+                            <img src="imgs/icon2.png" alt="">
+                        </div>
+                        <h5>Auto fulfillment</h5>
+                        <p>Help you manage your orders easily, and you can just focus on selling</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-padding-small pod-card1">
+                        <div class="pod-box-img1">
+                            <img src="imgs/icon3.png" alt="">
+                        </div>
+                        <h5>Safe and secure</h5>
+                        <p>Keep your information and art designs safe with security system</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-padding-small pod-card1">
+                        <div class="pod-box-img1">
+                            <img src="imgs/icon4.png" alt="">
+                        </div>
+                        <h5>Competitive price</h5>
+                        <p>Fair pricing, no hidden cost, cancel anytime</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-box-shadow-medium uk-card-hover uk-padding-small pod-card1">
+                        <div class="pod-box-img1">
+                            <img src="imgs/icon5.png" alt="">
+                        </div>
+                        <h5>Support 24/24</h5>
+                        <p>We have an excellent team of experienced agents, each of them specializing in particular
+                            types of support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pod-how" class="pod-common uk-section-small">
+        <div class="uk-container">
+            <div uk-grid>
+                <div class="uk-width-3-5@m uk-position-relative">
+                    <div class="uk-position-center-right">
+                        <div class="pod-box-img uk-box-shadow-large uk-visible@m"
+                             uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
+                            <img src="imgs/order.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-2-5@m">
+                    <div class="pod-block-header uk-margin-medium">
+                        <span class="uk-text-uppercase">Step process</span>
+                        <h2>How it work</h2>
+                    </div>
+                    <div>
+                        <ul class="uk-list"
+                            uk-scrollspy="cls: uk-animation-slide-right; target: li; delay: 200; repeat: false">
+                            <li class="uk-margin">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <i class="uk-border-circle pod-icon-step fa fa-cog" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="pod-step-name">Step 1</div>
+                                        <div class="pod-desc3">Set up your Shopify or Woocommerce store</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-margin">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <i class="uk-border-circle pod-icon-step fa fa-download" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="pod-step-name">Step 2</div>
+                                        <div class="pod-desc3">Install PodEz app - create new account to your store
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-margin">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <i class="uk-border-circle pod-icon-step fa fa-list-ul" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="pod-step-name">Step 3</div>
+                                        <div class="pod-desc3">List and create new products on app</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-margin">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <i class="uk-border-circle pod-icon-step fa fa-cube" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="pod-step-name">Step 4</div>
+                                        <div class="pod-desc3">Sync your orders to PodEz and we will fulfill them</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-margin">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <i class="uk-border-circle pod-icon-step fa fa-star-o" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <div class="pod-step-name">Step 5</div>
+                                        <div class="pod-desc3">Finally, products get shipped to the customer</div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-large">
+        <div class="uk-container">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-expand@m">
+                    <div class="pod-block-header uk-margin-medium">
+                        <span class="uk-text-uppercase">who are we</span>
+                        <h2>About PodEz</h2>
+                    </div>
+                    <p class="pod-desc2">At Podez, we make it easy to sell your own idea. Over 20 exclusive products
+                        will make your store stand out from the crowd.</p>
+                    <p class="pod-desc">We believe that good design is powerful, hard work is essential, and exploring
+                        the unknown is important. We focus on how to help you sell better, and you can just focus on
+                        selling. All the features you want, none of the hassle.</p>
+                    <div>
+                        <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">More about us</a>
+                    </div>
+                </div>
+                <div class="uk-width-auto@m">
+                    <img src="imgs/img5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pod-block-customer" class="uk-section pod-common uk-position-relative">
+        <div class="floating-shapes">
+        <span data-parallax='{"x": 50, "y": -20, "rotateZ":500}'>
+            <img src="imgs/shape/shape1.png" alt="">
+        </span>
+            <span data-parallax='{"x": 250, "y": 150, "rotateZ":500}'>
+            <img src="imgs/shape/shape2.png" alt="">
+        </span>
+            <span data-parallax='{"x": -180, "y": 80, "rotateY":2000}'>
+            <img src="imgs/shape/shape3.png" alt="">
+        </span>
+            <span data-parallax='{"x": -20, "y": 380}'>
+            <img src="imgs/shape/shape4.png" alt="">
+        </span>
+            <span data-parallax='{"x": 200, "y": 70}'>
+            <img src="imgs/shape/shape5.png" alt="">
+        </span>
+            <span data-parallax='{"x": 250, "y": 380, "rotateZ":1500}'>
+            <img src="imgs/shape/shape6.png" alt="">
+        </span>
+        </div>
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                <div>
+                    <div class="pod-block-header uk-margin-medium">
+                        <span class="uk-text-uppercase">our community</span>
+                        <h2>Customer Review</h2>
+                    </div>
+                    <div class="pod-customer owl-carousel owl-theme">
+                        <div class="item">
+                            <p class="pod-desc1">“Freelancer hoàn thành công việc rất tốt và chuyên nghiệp, đáp ứng tất
+                                cả những yêu cầu của tôi đưa ra. Sẽ làm việc lại với freelancer này trong tương
+                                lai.”</p>
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div class="uk-cover-container uk-border-circle">
+                                        <img src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.0-0/p370x247/62308992_10156814080283411_1022742669362724864_n.jpg?_nc_cat=110&_nc_oc=AQktgubE4fz5DAaWtj4K8AWKzG8xJTy5Xi4OIP2PcZi6u8-Ucx7kjOOZ2BF1m2-1ObU&_nc_ht=scontent.fhan3-1.fna&oh=151a74abc4a6988dad9a50b96bf80fd4&oe=5D899BF3"
+                                             alt="" uk-cover>
+                                        <canvas width="40" height="40"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h6 class="pod-name1 uk-margin-remove">Nguyen Manh Thang</h6>
+                                    <small>CEO</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="pod-desc1">“This app is great. I'm new to this but this app really helps me. great
+                                that the shipping price is included in the cost. wish there are more items to choose
+                                from though. please add more stuff.”</p>
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div class="uk-cover-container uk-border-circle">
+                                        <img src="https://scontent.fhan4-1.fna.fbcdn.net/v/t1.0-9/53189234_1027192717473217_4973914510675935232_n.jpg?_nc_cat=105&_nc_oc=AQnx47cDHDctEzJnaBx8r2hHS3FrMYdeZgJVrp9__Iz1JINuI74txeo1Mnvd03bqKtw&_nc_ht=scontent.fhan4-1.fna&oh=46ff7bc314985cb968d6e001ad94ff4e&oe=5D92A9E1"
+                                             alt="" uk-cover>
+                                        <canvas width="40" height="40"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h6 class="pod-name1 uk-margin-remove">Hai LE Manh</h6>
+                                    <small>Freelancer</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <p class="pod-desc1">“Hoàng Anh là freelancer rất tích cực trong công việc và giao tiếp,
+                                nhanh nhẹn và thông minh. Sẵn sàng hợp tác với bạn khi có dự án mới.”</p>
+                            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                    <div class="uk-cover-container uk-border-circle">
+                                        <img src="https://scontent.fhan3-3.fna.fbcdn.net/v/t1.0-9/64586113_1733627210114548_6739190101336653824_n.jpg?_nc_cat=100&_nc_oc=AQnmcH8vOMwLuEhmNB8N9wPKhcs9j_5ZJ9Qa1DX8O-VYEG5jhcMj7aeqd7y9iPs1iYU&_nc_ht=scontent.fhan3-3.fna&oh=ff3d00622f5e267625929709d59fb097&oe=5D86DF1D"
+                                             alt="" uk-cover>
+                                        <canvas width="40" height="40"></canvas>
+                                    </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                    <h6 class="pod-name1 uk-margin-remove">Heather Coleman</h6>
+                                    <small>Manager</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $('.pod-customer').owlCarousel({
+                            loop: false,
+                            margin: 10,
+                            nav: true,
+                            dots: false,
+                            autoHeight: false,
+                            responsive: {
+                                0: {
+                                    items: 1
+                                },
+                                600: {
+                                    items: 1
+                                },
+                                1000: {
+                                    items: 1
+                                }
+                            }
+                        })
+                    </script>
+                </div>
+                <div class="uk-flex-first@m">
+                    <img src="imgs/custom-banner-left.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="pod-block-header uk-text-center uk-margin-medium">
+                <span class="uk-text-uppercase">products</span>
+                <h2>Featured Products</h2>
+            </div>
+            <div class="uk-child-width-1-2 uk-child-width-1-4@m uk-grid-medium uk-margin-medium" uk-grid>
+                <div>
+                    <div class="pod-img1">
+                        <img src="imgs/img1.jpg" alt="">
+                    </div>
+                    <div class="uk-text-center uk-margin-small pod-txt1">
+                        <h6><a href="#">Hoodie</a></h6>
+                        <p>$33.5</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="pod-img1">
+                        <img src="imgs/img2.jpg" alt="">
+                    </div>
+                    <div class="uk-text-center uk-margin-small pod-txt1">
+                        <h6><a href="#">T-Shirt</a></h6>
+                        <p>$12.5</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="pod-img1">
+                        <img src="imgs/img3.jpg" alt="">
+                    </div>
+                    <div class="uk-text-center uk-margin-small pod-txt1">
+                        <h6><a href="#">Zip Hoodie</a></h6>
+                        <p>$29.5</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="pod-img1">
+                        <img src="imgs/img4.jpg" alt="">
+                    </div>
+                    <div class="uk-text-center uk-margin-small pod-txt1">
+                        <h6><a href="#">Sweatshirt</a></h6>
+                        <p>$20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-text-center">
+                <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">All products</a>
+            </div>
+        </div>
+    </div>
+    <div id="pod-block-getapp" class="uk-section" data-src="imgs/bg-getapp.jpg" uk-img>
+        <div class="uk-container">
+            <div class="uk-grid-medium" uk-grid>
+                <div class="uk-width-expand">
+                    <div class="pod-box-img uk-box-shadow-medium">
+                        <img src="imgs/Orderdetail.jpg" alt="">
+                    </div>
+                </div>
+                <div class="uk-width-1-3@m uk-flex-first@m">
+                    <div class="pod-block-header">
+                        <span class="uk-text-uppercase">install now</span>
+                        <h2>Get The App</h2>
+                    </div>
+                    <p class="pod-desc">Get the latest resources for installing, and updating PodEz. Select your device
+                        platform and Use Our app and Enjoy Your Life.</p>
+                    <div class="uk-margin-medium">
+                        <a href="#" class="uk-button uk-button-secondary uk-button-large pod-install"><span
+                                uk-icon="download"></span> Install here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="pod-footer" class="uk-section pod-common">
+        <div class="uk-container">
+            <div class="uk-child-width-1-5@m" uk-grid>
+                <div>
+                    <figure>
+                        <a href=""><img src="imgs/logo.png" alt=""></a>
+                    </figure>
+                </div>
+                <div class="uk-visible@s">
+                    <h4 class="pod-footer-title">Contact us</h4>
+                    <ul class="uk-list pod-footer-list">
+                        <li>support@podez.com</li>
+                        <li>+123 456 789</li>
+                    </ul>
+                </div>
+                <div class="uk-visible@s">
+                    <h4 class="pod-footer-title">Company</h4>
+                    <ul class="uk-list pod-footer-list">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Meet the team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="uk-visible@s">
+                    <h4 class="pod-footer-title">Support</h4>
+                    <ul class="uk-list pod-footer-list">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">How it work</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+                <div class="uk-visible@s">
+                    <h4 class="pod-footer-title">Follow us</h4>
+                    <div class="pod-footer-social">
+                        <a href="" class="uk-icon-button" uk-icon="twitter"></a>
+                        <a href="" class="uk-icon-button" uk-icon="facebook"></a>
+                        <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+                        <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                    </div>
+                </div>
+                <div class="uk-hidden@s">
+                    <ul class="pod-menu-bottom-mobile" uk-accordion="multiple: true">
+                        <li>
+                            <a class="uk-accordion-title" href="#">Contact us</a>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list pod-footer-list">
+                                    <li>support@podez.com</li>
+                                    <li>+123 456 789</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Company</a>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list pod-footer-list">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Meet the team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Support</a>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list pod-footer-list">
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">How it work</a></li>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">Follow us</a>
+                            <div class="uk-accordion-content">
+                                <div class="pod-footer-social">
+                                    <a href="" class="uk-icon-button" uk-icon="twitter"></a>
+                                    <a href="" class="uk-icon-button" uk-icon="facebook"></a>
+                                    <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+                                    <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

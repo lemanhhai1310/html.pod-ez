@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>POD-EZ - Hỏi đáp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/uikit-3.1.5/css/uikit.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <!--JS-->
+    <script src="assets/jquery/jquery-3.3.1.js"></script>
+    <script src="assets/uikit-3.1.5/js/uikit.min.js"></script>
+    <script src="assets/uikit-3.1.5/js/uikit-icons.min.js"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/jquery.parallax-scroll.js"></script>
+    <script src="js/typed.min.js"></script>
+</head>
+<body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            xfbml: true,
+            version: 'v3.2'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     attribution=setup_tool
+     page_id="2428809380682169"
+     theme_color="#24892d">
+</div>
+<section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
+    <div id="my-id" uk-offcanvas="overlay: true; mode: push">
+        <div class="uk-offcanvas-bar uk-overflow-auto uk-flex uk-flex-column uk-padding-remove">
+            <nav class="menu_m">
+                <div class="lq-login-regis" hidden>
+                    <div>
+                        <img src="imgs/user1.png" alt="">
+                        <span class="login-txt uk-text-uppercase"><a class="uk-link-reset" href="#">đăng nhập</a></span>
+                        <div class="regis-forgot">
+                            <a href="#">đăng ký</a> / <a href="#">quên mật khẩu</a>
+                        </div>
+                    </div>
+                </div>
+                <ul class="uk-list uk-margin-remove">
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            ABOUT </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            FEATURES </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            HOW IT WORK </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="faqs.php">
+                            FAQ </a>
+                    </li>
+                    <li class="uk-margin-remove ">
+                        <a class="uk-padding-small uk-display-block" href="#">
+                            SIGN IN </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright_m">
+                <div class="uk-padding-small">
+                    <small>Copyright © 2019 POD-EZ. All rights reserved.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header id="pod-header" class="uk-background-default" uk-sticky>
+        <div class="uk-container">
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+
+                <div class="uk-navbar-left">
+                    <a href="#my-id" class="uk-navbar-toggle uk-padding-remove-left uk-hidden@m" uk-toggle="">
+                        <div id="m_nav_menu" class="m_nav menu">
+                            <div class="m_nav_ham button_closed" id="m_ham_1"></div>
+                            <div class="m_nav_ham button_closed" id="m_ham_2"></div>
+                            <div class="m_nav_ham button_closed" id="m_ham_3"></div>
+                        </div>
+                    </a>
+                    <a class="uk-navbar-item uk-logo" href=""><img src="imgs/logo.png" alt=""></a>
+                </div>
+
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav uk-visible@m">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">features</a></li>
+                        <li><a href="#">How it work</a></li>
+                        <li><a href="faqs.php">faq</a></li>
+                        <li><a href="#">sign in</a></li>
+                    </ul>
+                </div>
+
+                <div class="uk-navbar-right">
+
+                    <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">Install PodEz</a>
+
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <div id="pod-block-faq" class="uk-section" data-src="imgs/bg_faq.jpg" uk-img>
+        <div class="uk-container uk-container-small">
+            <div class="pod-block-header uk-text-center uk-margin-medium">
+                <h2>How Can We Help You?</h2>
+                <p class="uk-margin-small-top pod-desc-faq">FAQs, quick fixes, and official info on every Dropbox
+                    feature. Just a search away.</p>
+            </div>
+            <div class="uk-flex-center" uk-grid>
+                <div class="uk-width-5-6@m">
+                    <div class="uk-margin">
+                        <form class="pod-form1 uk-search uk-search-default uk-background-default uk-overflow-hidden uk-width-1-1">
+                            <a href="" uk-search-icon></a>
+                            <input class="uk-search-input" type="search" placeholder="Search for answers...">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-small">
+        <div class="uk-container uk-container-small">
+            <h4 class="pod-title1">Featured Articles</h4>
+            <ul uk-accordion>
+                <li class="pod-question1 uk-margin-small uk-open">
+                    <a class="uk-accordion-title" href="#">What is PodEz and how does it work?</a>
+                    <div class="uk-accordion-content">
+                        <p>PodEz is a complete commerce platform that lets you start, grow, and manage a business.
+                            Create and customize an online store. Sell in multiple places, including web, mobile, social
+                            media, online marketplaces, brick-and-mortar locations, and pop-up shops. Manage products,
+                            inventory, payments, and shipping. PodEz is completely cloud-based and hosted, which means
+                            you don’t have to worry about upgrading or maintaining software or web servers.</p>
+                    </div>
+                </li>
+                <li class="pod-question1 uk-margin-small ">
+                    <a class="uk-accordion-title" href="#">How much does PodEz cost?</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li class="pod-question1 uk-margin-small ">
+                    <a class="uk-accordion-title" href="#">What is PodEz and how does it work?</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li class="pod-question1 uk-margin-small ">
+                    <a class="uk-accordion-title" href="#">Can I use my own domain name with PodEz?</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li class="pod-question1 uk-margin-small ">
+                    <a class="uk-accordion-title" href="#">In what countries can I use PodEz?</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+            </ul>
+            <h4 class="pod-title1">Communication</h4>
+            <ul uk-accordion>
+                <li class="pod-question1 uk-margin-small ">
+                    <a class="uk-accordion-title" href="#">Pairing your phone with PodEz?</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li class="pod-question1 uk-margin-small ">
+                    <a class="uk-accordion-title" href="#">How to configure your notifications?</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li class="pod-question1 uk-margin-small ">
+                    <a class="uk-accordion-title" href="#">Problems sending or receiving messages?</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li class="pod-question1 uk-margin-small ">
+                    <a class="uk-accordion-title" href="#">Recover and restore deleted files or folders?</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pod-common uk-section uk-background-norepeat uk-background-bottom-right uk-height"
+         data-src="imgs/bg_contact.png" uk-img>
+        <div class="uk-container">
+            <div class="uk-child-width-1-2@m uk-flex-middle uk-grid-large" uk-grid>
+                <div>
+                    <div class="pod-block-header uk-margin-large">
+                        <h2>
+                            Need a helping hand? <br>
+                            We’re all ears
+                        </h2>
+                    </div>
+                    <form class="pod-form2">
+                        <fieldset class="uk-fieldset">
+
+
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="Your Name">
+                            </div>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="email" placeholder="Email">
+                            </div>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="Subject">
+                            </div>
+                            <div class="uk-margin">
+                                <textarea class="uk-textarea" rows="5" placeholder="Message"></textarea>
+                            </div>
+
+                            <div class="uk-margin">
+                                <a href="#" class="uk-button pod-btn1 uk-button-default uk-button-large">Send</a>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+                <div>
+                    <h5 class="pod-contact-title uk-margin-medium">Contact us</h5>
+                    <ul class="uk-list pod-contact-list">
+                        <li class="uk-position-relative uk-margin-medium">
+                            <span class="uk-position-top-left" uk-icon="location"></span>
+                            <div class="pod-label-txt">Location</div>
+                            <div class="pod-txt">
+                                South Miles Ave <br>
+                                Royersford, PA 19468
+                            </div>
+                        </li>
+                        <li class="uk-position-relative uk-margin-medium">
+                            <span class="uk-position-top-left" uk-icon="mail"></span>
+                            <div class="pod-label-txt">Email Address</div>
+                            <div class="pod-txt">
+                                support@podez.com
+                            </div>
+                        </li>
+                        <li class="uk-position-relative uk-margin-medium">
+                            <span class="uk-position-top-left" uk-icon="receiver"></span>
+                            <div class="pod-label-txt">Phone No.</div>
+                            <div class="pod-txt">
+                                +123 456 789
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="pod-footer" class="uk-section pod-common">
+        <div class="uk-container">
+            <div class="uk-child-width-1-5@m" uk-grid>
+                <div>
+                    <figure>
+                        <a href=""><img src="imgs/logo.png" alt=""></a>
+                    </figure>
+                </div>
+                <div class="uk-visible@s">
+                    <h4 class="pod-footer-title">Contact us</h4>
+                    <ul class="uk-list pod-footer-list">
+                        <li>support@podez.com</li>
+                        <li>+123 456 789</li>
+                    </ul>
+                </div>
+                <div class="uk-visible@s">
+                    <h4 class="pod-footer-title">Company</h4>
+                    <ul class="uk-list pod-footer-list">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Meet the team</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="uk-visible@s">
+                    <h4 class="pod-footer-title">Support</h4>
+                    <ul class="uk-list pod-footer-list">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">How it work</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                    </ul>
+                </div>
+                <div class="uk-visible@s">
+                    <h4 class="pod-footer-title">Follow us</h4>
+                    <div class="pod-footer-social">
+                        <a href="" class="uk-icon-button" uk-icon="twitter"></a>
+                        <a href="" class="uk-icon-button" uk-icon="facebook"></a>
+                        <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+                        <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                    </div>
+                </div>
+                <div class="uk-hidden@s">
+                    <ul class="pod-menu-bottom-mobile" uk-accordion="multiple: true">
+                        <li>
+                            <a class="uk-accordion-title" href="#">Contact us</a>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list pod-footer-list">
+                                    <li>support@podez.com</li>
+                                    <li>+123 456 789</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Company</a>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list pod-footer-list">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Meet the team</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="uk-accordion-title" href="#">Support</a>
+                            <div class="uk-accordion-content">
+                                <ul class="uk-list pod-footer-list">
+                                    <li><a href="#">Help Center</a></li>
+                                    <li><a href="#">How it work</a></li>
+                                    <li><a href="#">Community</a></li>
+                                    <li><a href="#">Terms of use</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="uk-open">
+                            <a class="uk-accordion-title" href="#">Follow us</a>
+                            <div class="uk-accordion-content">
+                                <div class="pod-footer-social">
+                                    <a href="" class="uk-icon-button" uk-icon="twitter"></a>
+                                    <a href="" class="uk-icon-button" uk-icon="facebook"></a>
+                                    <a href="" class="uk-icon-button" uk-icon="google-plus"></a>
+                                    <a href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+</body>
+</html>
