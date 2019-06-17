@@ -40,10 +40,24 @@
   border-radius: 4px;
   &.uk-open{
     border-color: #021d3d;
+    .uk-accordion-title{
+      &:before{
+        content: '\f106';
+      }
+    }
   }
   .uk-accordion-title{
     font-size: 14px;
     color: #021d3d;
+    &:before{
+      content: '\f107';
+      font-family: FontAwesome;
+      background-image: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 17px;
+    }
   }
   .uk-accordion-content{
     p{

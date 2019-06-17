@@ -1,0 +1,61 @@
+.uk-offcanvas{
+  .uk-offcanvas-bar{
+    background: #f5fbf6 !important;
+  }
+  &.uk-open{
+    &:before{
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+  }
+  .uk-offcanvas-bar{
+
+  }
+  .uk-offcanvas-close{
+    left: 275px;
+    top: 10px;
+    img{
+      height: 20px;
+    }
+  }
+  .uk-nav-default{
+    background-color: #fff;
+    li{
+      a{
+        padding: 6px 12px;
+        color: #333 !important;
+        border-top: 1px solid #e8eaee;
+        text-transform: capitalize;
+        font-size: 13px;
+      }
+    }
+  }
+  .uk-parent{
+    >a{
+      &:after{
+        content: "\f105";
+        font: normal normal normal 14px/1 FontAwesome;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &.uk-open{
+      >a{
+        &:after{
+          content: "\f107";
+        }
+      }
+    }
+  }
+  .uk-nav-sub{
+    padding: 0;
+  }
+  .media{
+    background-color: #A7080D !important;
+    img{
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+  }
+}

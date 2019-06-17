@@ -20,6 +20,9 @@
   border-radius: 16px;
   padding: 20px;
   padding-right: 40px;
+  @media(max-width: 560px){
+    padding-right: 20px;
+  }
   h5{
     color: #021d3d;
     font-family:'Poppins-SemiBold';
@@ -226,6 +229,9 @@
     font-size: 35px;
     font-family:'Poppins-SemiBold';
     color: #021d3d;
+    @media(max-width: 560px){
+      font-size: 28px;
+    }
     #pod-block-faq &{
       color: #FFFFFF !important;
     }

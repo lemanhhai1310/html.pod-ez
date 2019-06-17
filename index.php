@@ -66,7 +66,7 @@
                 We take care of everything!
             </h2>
         </div>
-        <div class="uk-child-width-1-2 uk-child-width-1-3@m uk-grid-medium uk-grid-match uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 100; repeat: false">
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-medium uk-grid-match uk-flex-center" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 100; repeat: false">
             <?php
             $data = array(
                 array(

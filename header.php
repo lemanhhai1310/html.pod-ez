@@ -45,11 +45,19 @@
      theme_color="#24892d">
 </div>
 <section id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden">
+<?php include('menu_mobile1.php'); ?>
 <header id="pod-header" class="uk-background-default" uk-sticky>
     <div class="uk-container">
         <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
             <div class="uk-navbar-left">
+                <a href="#my-id" class="uk-navbar-toggle uk-padding-remove-left uk-hidden@m" uk-toggle="">
+                    <div id="m_nav_menu" class="m_nav menu">
+                        <div class="m_nav_ham button_closed" id="m_ham_1"></div>
+                        <div class="m_nav_ham button_closed" id="m_ham_2"></div>
+                        <div class="m_nav_ham button_closed" id="m_ham_3"></div>
+                    </div>
+                </a>
                 <a class="uk-navbar-item uk-logo" href="."><img src="imgs/logo.png" alt=""></a>
             </div>
 
